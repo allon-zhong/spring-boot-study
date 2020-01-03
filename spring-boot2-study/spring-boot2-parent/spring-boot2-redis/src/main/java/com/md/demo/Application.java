@@ -9,6 +9,9 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * 程序主入口
+ * redis 存对象类型时需要序列化,有两种方式:
+ * 1.对象实现Serializable接口;
+ * 2. 配置类中 redisTemplate.setValueSerializer;..
  * 
  * @author Minbo
  *
